@@ -1,26 +1,17 @@
 
 <!-- <CENTER><IMG SRC= "Rio_square.jpg" WIDTH="30%" Height="30%"/></LEFT> -->
 <% ctr=1 %>
-<CENTER><h1>Nations</h1></CENTER>
- <CENTER><TABLE BORDER='1' WIDTH='100%'>
+<P><P><P>
+ <CENTER><TABLE BORDER='1'>
+ <TD colspan="10"  BGCOLOR="Yellow" style="font-size: 35px; color:black;"><CENTER>Nations</CENTER></TD><TR>
  <% @nations.each do |nation| %>
 
 
- <TD BGCOLOR="#424949">
+ <TD WIDTH="150" class="Country" BGCOLOR="Green">
     
-    
-
-
-    <!-- a href="/getartist"><%#= artist.name() %> -->
-    <!-- <a nohref style="cursor:pointer;color:White;text-decoration:underline"
-    onClick="alert --><!-- ('This will be a link to display the nations')"> -->
     <%= nation.name %>
-    <!-- <%= '<IMG SRC= "/public/flags/" + #{nation.name} +".png>"' %> -->
-    <!-- </a> -->
-    <TD><IMG SRC = <%= "flags/"+nation.name+".png" %> </TD>
-    <!-- img src="flags/great britain.png" -->
-
-
+    <TD WIDTH="10" BGCOLOR="#060E6D"><CENTER><IMG SRC="flags/<%= nation.name %>.png" </TD>
+    
     <% if ctr==5 %>
       </TD><TR>
     <% ctr=1 %>

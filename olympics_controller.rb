@@ -2,6 +2,7 @@ require( 'sinatra' )
 require( 'sinatra/contrib/all' )
 require( 'pry-byebug' )
 require_relative('./models/nations') 
+require_relative('./models/competitors') 
 # require_relative('./models/album')
 
 get '/nations' do
@@ -30,6 +31,12 @@ get '/nations' do
       erb ( :participants )
      end
 
+     get '/competitors' do
+      @competitors = Competitors.all
+       erb ( :competitors )
+      end
+
+
      get '/medal_table' do
        erb ( :medal_table )
       end
@@ -49,8 +56,6 @@ get '/nations' do
 #   # in rest - CREATE
 #   erb( :new_album )
 # end
-
-
 
 # #EDIT FROM REST
 # get '/artists/:id/edit' do
@@ -84,8 +89,6 @@ get '/nations' do
 #   @artist = Artist.find(params[:id])
 #   erb(:show)
 # end
-
-
 
 # #CREATE
 # post '/artists' do 

@@ -1,18 +1,17 @@
 
-<!-- <CENTER><IMG SRC= "Rio_square.jpg" WIDTH="30%" Height="30%"/></LEFT> -->
+ <!-- <CENTER><IMG SRC= "Rio_square.jpg" WIDTH="30%" Height="30%"/></LEFT> -->
+
+
 <% ctr=1 %>
 <P><P><P>
- <CENTER><TABLE BORDER='1'>
- <TD colspan="10" BGCOLOR="#060E6D" style="font-size: 35px;"><CENTER>Competitor</CENTER></TD><TR>
- <% @competitors.each do |competitor| %>
-
+ <CENTER><TABLE BORDER='1';>
+ <TD colspan="10"  BGCOLOR="Yellow" style="font-size: 35px;font-color:black;"><CENTER><font color="black">Competitors</CENTER></TD><TR>
+ <% @competitors.each do |competitor, | %>
 
  <TD WIDTH="150" class="Country" BGCOLOR="Green">
-    
-    <%= competitors.name %>
-    <TD WIDTH="10" BGCOLOR="Yellow"><CENTER></CENTER></TD>
-    
-    <!-- <IMG SRC="flags/<%= competitors.name %>.png" </TD> -->
+    <%= competitor.name %></TD>
+    <TD WIDTH="10" BGCOLOR="#060E6D">
+   <IMG SRC="person/<%= competitor.name %>.jpg" WIDTH="50" HEIGHT="50" ></TD>
     
     <% if ctr==5 %>
       </TD><TR>
@@ -30,7 +29,7 @@
 
 
 
-<CENTER><H1>Athletes</CENTER<H1></CENTER>
+<!-- <CENTER><H1>Athletes</CENTER<H1></CENTER>
 <TABLE WIDTH= '100%' BORDER='1'>
 <TH>Num</TH>
 <TH>Athlete</TH>
@@ -74,4 +73,4 @@
 30. <TD> Yurie Kato        <TD>JPN </TD><TR><TD><CENTER>
 31. <TD> Sara  Vilic       <TD>AUT </TD><TD>
 32. <TD> Ainhoa  Murua     <TD>ESP </TD><TD> 
-</TD></TABLE>
+</TD></TABLE> -->
