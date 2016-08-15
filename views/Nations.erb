@@ -1,15 +1,33 @@
-<!-- <P><P><P><P><P><P><CENTER><h1>Welcome to the 2016 Rio Olympics.</h1><BR><BR> -->
-<P><P><P>
-<CENTER><IMG SRC= "Rio_square.jpg" WIDTH="30%" Height="30%"/></LEFT>
 
-<!-- <a href='./artists/new'><h3>Create a New Artist</h3></a></CENTER>
-<a href='./artists'><h3>View Artists List</h3></a></CENTER>
- -->
- <!-- <div id="cf2" class="shadow">
-   <img class="bottom" src="/Rio_square.jpg" />
-   <img class="top" src="/Rio_3d.jpg" />
- </div>
- <p id="cf_onclick">Click me to toggle</p>
- -->
+<!-- <CENTER><IMG SRC= "Rio_square.jpg" WIDTH="30%" Height="30%"/></LEFT> -->
+<% ctr=1 %>
+<CENTER><h1>Nations</h1></CENTER>
+ <CENTER><TABLE BORDER='1' WIDTH='100%'>
+ <% @nations.each do |nation| %>
 
- <!-- <P><P><P><P><CENTER><h1>Select a link above to continue.</h1><BR><BR> -->
+
+ <TD BGCOLOR="#424949">
+    
+    
+
+
+    <!-- a href="/getartist"><%#= artist.name() %> -->
+    <!-- <a nohref style="cursor:pointer;color:White;text-decoration:underline"
+    onClick="alert --><!-- ('This will be a link to display the nations')"> -->
+    <%= nation.name %>
+    <!-- <%= '<IMG SRC= "/public/flags/" + #{nation.name} +".png>"' %> -->
+    <!-- </a> -->
+    <TD><IMG SRC = <%= "flags/"+nation.name+".png" %> </TD>
+    <!-- img src="flags/great britain.png" -->
+
+
+    <% if ctr==5 %>
+      </TD><TR>
+    <% ctr=1 %>
+  <% else %>
+  <% ctr +=1 %>
+</TD>
+<% end %>
+
+ <% end %>
+ </TABLE>

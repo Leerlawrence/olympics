@@ -1,10 +1,11 @@
 require( 'sinatra' )
 require( 'sinatra/contrib/all' )
 require( 'pry-byebug' )
-# require_relative('./models/artist') 
+require_relative('./models/nations') 
 # require_relative('./models/album')
 
 get '/nations' do
+  @nations = Nations.all
   erb ( :nations )
  end
 
@@ -15,6 +16,11 @@ get '/nations' do
   get '/' do
     erb ( :splash )
    end
+
+   get '/splash' do
+     erb ( :splash )
+    end
+
 
    get '/home' do
      erb ( :home )
