@@ -54,7 +54,12 @@ get '/nations' do
         erb ( :event_edit )
       end
 
+      get '/nations/:id/edit' do
+        # binding.pry
+        @nations = Nations.find(params[:id])
 
+        erb ( :nation_edit )
+      end
 
 
 

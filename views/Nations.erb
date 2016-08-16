@@ -8,9 +8,9 @@
  <% @nations.each do |nation| %>
 
 
- <TD class="data" WIDTH="200">
+ <TD class="data" WIDTH="150">
+    <a href = "/nations/<%= nation.id %>/edit" class="nation"><%= nation.name %></a>
     
-    <%= nation.name %></B>
     <TD WIDTH="10" class="flag" BGCOLOR="#060E6D" PADDING="0"><CENTER><IMG SRC="flags/<%= nation.name %>.png" </TD>
     
     <% if ctr==5 %>

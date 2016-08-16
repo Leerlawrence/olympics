@@ -15,22 +15,12 @@
  <!-- <form HEIGHT="100%"> -->
  <!-- <div class="my-container"> -->
  
-<form action="/events/<%= @event.id %>" method="post">
-
-
+<form action="/Nations/<%= @nation.id %>" method="post">
 
 <table  BORDER="0" WIDTH="100%"><TD WIDTH="30%" VALIGN="TOP">
-<h1>Edit Event</h1>
-  <label for="sport">Sport:</label> 
-  <input type="text" name="sport" value="<%= @event.sport %>"><P><P>
-  <label for="name">Event Name:</label> 
-  <input type="text" name="name" value="<%= @event.name %>"><P><P>   
-  <label for="gold">Gold:</label> 
-  <input type="text" name="gold" value="<%= @event.gold %>"><P><P>
-  <label for="silver">Silver:</label>
-  <input type="text" name="silver" value="<%= @event.silver %>"><P><P>
-  <label for="gold">Bronze:</label>
-  <input type="text" name="bronze" value="<%= @event.bronze %>"><P><P>
+<h1>Nation</h1>
+  <label for="name">Name:</label> 
+  <input type="text" name="name" value="<%= @nation.name %>"><P><P>   
   <input type='submit' value="Save Event"></TD>
   <TD WIDTH="30%"</TD> <TD VALIGN="TOP">
   <img src="/sports/sports_collage.jpg"></TD>

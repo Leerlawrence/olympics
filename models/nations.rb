@@ -2,7 +2,7 @@ require( 'pg' )
 require_relative('../db/sql_runner')
 
 class Nations
-
+  
   attr_reader( :id, :name)
 
   def initialize( options )
@@ -29,5 +29,15 @@ class Nations
     result = nations.map { |s| Nations.new( s ) }
     return result
   end
+
+  def self.find(id)
+    sql = "SELECT * FROM nations WHERE id = #{id}"
+  binding.pry
+    nations = SqlRunner.run( sql )
+    result = Nations.new(nations.first)
+    return result
+  end
+
+
 
 end
