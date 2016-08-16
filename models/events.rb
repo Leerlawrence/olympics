@@ -1,9 +1,10 @@
 require( 'pg' )
 require_relative('../db/sql_runner')
 
+
 class Events
 
-  attr_reader( :id, :name)
+  attr_reader( :id, :name, :sport, :gold, :silver, :bronze)
 
   def initialize( options )
     @id = options['id'].to_i
@@ -11,7 +12,7 @@ class Events
     @sport = options['sport']
     @gold = options['gold']
     @silver= options['silver']
-    @silver= options['bronze']
+    @bronze = options['bronze']
 
   end
 # FINISH THIS OFF TOMORROEW
@@ -22,7 +23,7 @@ class Events
   end
 
   def self.all()
-    sql = "SELECT * FROM events ORDER BY name"
+    sql = "SELECT * FROM events ORDER BY sport"
     events = SqlRunner.run( sql )
     result = events.map { |s| Events.new( s ) }
     return result
@@ -35,11 +36,12 @@ class Events
     return result
   end
 
-  def self.all()
-    sql = "SELECT * FROM events ORDER BY name"
-    events = SqlRunner.run( sql )
-    result = events.map { |s| Events.new( s ) }
+
+  # def self.all()
+  #   sql = "SELECT * FROM events ORDER BY name"
+  #   events = SqlRunner.run( sql )
+  #   result = events.map { |s| Events.new( s ) }
   
-    return result
-  end
+  #   return result
+  # end
 end

@@ -3,6 +3,7 @@ require( 'sinatra/contrib/all' )
 require( 'pry-byebug' )
 require_relative('./models/nations') 
 require_relative('./models/competitors') 
+require_relative('./models/events') 
 # require_relative('./models/album')
 
 get '/nations' do
@@ -42,6 +43,7 @@ get '/nations' do
       end
 
      get '/events' do
+      @events=Events.all
        erb ( :events )
       end
 

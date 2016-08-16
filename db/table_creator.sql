@@ -25,46 +25,46 @@ CREATE TABLE competitors (
 
 
 
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (1, 'Archery','',1,2, 3);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (2, 'Athletics','',3,4,5);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (3, 'Badminton','',5,6,7);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (4, 'Basketball','',8,9,10);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (5, 'Beach volleyball','',11,12,13);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (6, 'Boxing','',14,15,16);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (7, 'Canoe Slalom','',16,17,18);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (8, 'Canoe Sprint','',18,19,20);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (9, 'Cycling BMX','',20,21,22);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (10, 'Cycling MTB','', 23,24,25);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (11, 'Cycling Road','',26,27,28);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (12, 'Cycling Track','',29,30,1);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (13, 'Diving','',2,3,4);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (14, 'Equestrian Dressage','',5,6,7);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (15, 'Equestrian Eventing','',8,9,10);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (16, 'Equestrian Jumping','',11,12,13);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (17, 'Fencing','',14,15,16);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (18, 'Football','',17,18,19);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (19, 'Golf','',20,21,22);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (20, 'Gymnastics Artistic','',23,24,25);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (21, 'Gymnastics Rythmic','',25,26,27);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (22, 'Handball','',26,27,28);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (23, 'Hockey','',28,29,20);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (24, 'Judo','',29.30,13);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (25, 'Modern Pentathlon','',27,28,29);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (26, 'Rowing','',1,4,7);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (27, 'Rugby','',2,5,8);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (28, 'Sailing','',3,6,9);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (29, 'Shooting','',4,7,10);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (30, 'Swimming','',5,8,11);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (31, 'Synchronised Swimming','',6,9,12);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (32, 'Table Tennis','',7,10,13);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (33, 'Tennis','',8,11,14);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (34, 'Trampoline','',9,12,15);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (35, 'Triathlon','',10,13,16);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (36, 'Volleyball','',11,14,17);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (37, 'Water Polo','', 12,15,18);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (38, 'Weightlifting','', 13,16,19);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (39, 'Wrestling Freestyle','',14,17,20);
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (40, 'Wrestling - Greco roman','',15,18,21);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (1, 'Archery','Shooty Arrow a long way',1,2, 3);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (2, 'Athletics','Run quite fast for 400 metres',3,4,5);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (3, 'Badminton','Hit a feathery thing back and forth',5,6,7);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (4, 'Basketball','Bounce a ball then throw it',8,9,10);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (5, 'Beach volleyball','Run around in your swimmers',11,12,13);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (6, 'Boxing','Punch someone hard',14,15,16);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (7, 'Canoe Slalom','Go down some water viraging',16,17,18);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (8, 'Canoe Sprint','Go down some water really fast',18,19,20);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (9, 'Cycling BMX','Go downhill on a kids bike',20,21,22);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (10, 'Cycling MTB','Go downhill fast over bumps', 23,24,25);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (11, 'Cycling Road','Cycle quickly on the road',26,27,28);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (12, 'Cycling Track','Go round and round on a bike',29,30,1);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (13, 'Diving','Jump into the water without belly flopping',2,3,4);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (14, 'Equestrian Dressage','Trot up and down on a horse',5,6,7);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (15, 'Equestrian Eventing','Somethiong to do with horses',8,9,10);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (16, 'Equestrian Jumping','Letting the horse work and you taking the glory',11,12,13);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (17, 'Fencing','Poke someone with a pointy stick',14,15,16);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (18, 'Football','Kick a ball up and down',17,18,19);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (19, 'Golf','Hit a small ball a long way',20,21,22);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (20, 'Gymnastics Artistic','Prance around artisitically',23,24,25);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (21, 'Gymnastics Rythmic','prance around rythmically',25,26,27);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (22, 'Handball','Hit the ball with your hand',26,27,28);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (23, 'Hockey','Hit a ball with a stick',28,29,20);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (24, 'Judo','Fight in your pyjamas',29.30,13);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (25, 'Modern Pentathlon','Do 7 things well',27,28,29);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (26, 'Rowing','Row with a small person shouting at you',1,4,7);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (27, 'Rugby','Run around with an egg shaped ball',2,5,8);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (28, 'Sailing','Get in a boat and open the Pims',3,6,9);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (29, 'Shooting','Shoot something ',4,7,10);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (30, 'Swimming','Flap about in the pool and stay afloat',5,8,11);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (31, 'Synchronised Swimming','Swim with funny nose pegs',6,9,12);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (32, 'Table Tennis','Ping Pong',7,10,13);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (33, 'Tennis','Big version of Ping Pong',8,11,14);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (34, 'Trampoline','Bouncing',9,12,15);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (35, 'Triathlon','Do three things well',10,13,16);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (36, 'Volleyball','Not so exciting as the beach version',11,14,17);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (37, 'Water Polo','Bashing a ball over the net in the water.', 12,15,18);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (38, 'Weightlifting','Holding something heavy above your head', 13,16,19);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (39, 'Wrestling Freestyle','WWF',14,17,20);
+INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (40, 'Wrestling - Greco Roman','Fighting like Greek Romans',15,18,21);
 
 INSERT INTO nations (id,name)  VALUES (1, 'Greece');
 INSERT INTO nations (id,name)  VALUES (2, 'Afghanistan');
@@ -143,7 +143,7 @@ INSERT INTO competitors (id,name,nation,sex)  VALUES (28, 'Patty Mills', 14,'F')
 INSERT INTO competitors (id,name,nation,sex)  VALUES (29, 'Dane Bird-Smith',14,'M');
 INSERT INTO competitors (id,name,nation,sex)  VALUES (30, 'Liz Cambage', 14,'F');
 
-INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (1, 'Archery','',1,2, 3);
+-- INSERT INTO events (id, sport, name, gold, silver, bronze) VALUES (1, 'Archery','',1,2, 3);
 
 -- SELECT * from nations;
 

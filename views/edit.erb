@@ -1,0 +1,32 @@
+<h1>Edit an event</h1>
+
+<form action="/events/<%= @event.id %>" method="post">
+
+id serial4 primary key,
+sport VARCHAR(255),
+name VARCHAR(255),
+gold VARCHAR(255),
+Silver VARCHAR(255),
+bronze VARCHAR(255)
+
+
+  <label for="sport">Sport:</label>
+  <input type="text" name="sport" value="<%= @event.sport %>"><P>
+  <label for="name">Event Name:</label>
+  <input type="text" name="name" value="<%= @event.name %>"><P>
+
+  <!-- <label for="topping">Select a pizza:</label>
+    <select name="topping">
+      <option value="Margherita" <%= 'selected' if @pizza.topping == "Margherita" %>>Margherita</option><P>
+      <option value="Calzone" <%= 'selected' if @pizza.topping == "Calzone" %>>Calzone</option>
+    </select><P> -->
+
+  <label for="gold">Gold:</label>
+  <input type="text" name="gold" value="<%= @event.gold %>">
+  <label for="silver">Silver:</label>
+  <input type="text" name="silver" value="<%= @event.silver %>">
+  <label for="gold">Bronze:</label>
+  <input type="text" name="bronze" value="<%= @event.bronze %>">
+  <input type='submit' value="Save Event">
+  
+</form>
