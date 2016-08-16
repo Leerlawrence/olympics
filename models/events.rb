@@ -36,6 +36,16 @@ class Events
     return result
   end
 
+  def self.find(id)
+    sql = "SELECT * FROM events WHERE id = #{id}"
+    # binding.pry
+    events = SqlRunner.run( sql )
+
+    ##result = Events.map(events)
+    result = Events.new(events.first)
+    return result
+  end
+
 
   # def self.all()
   #   sql = "SELECT * FROM events ORDER BY name"

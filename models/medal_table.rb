@@ -13,8 +13,10 @@ class Events
     @gold = options['gold']
     @silver= options['silver']
     @bronze = options['bronze']
-
   end
+
+
+  
 # FINISH THIS OFF TOMORROEW
   def save()
     sql = "INSERT INTO events (id,name,sport,gold,silver,bronze) VALUES ('#{ @name }', #{ @id }) RETURNING *"

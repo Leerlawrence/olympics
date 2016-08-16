@@ -1,5 +1,7 @@
-<h1>Edit an event</h1>
+<h1>Edit Event</h1>
 
+<!-- <div class="myImage" style="background:url('public/images/velo.jpg'); filter: brightness(50%); background-size:100%; height:500px; color:black"; >
+ -->
 <form action="/events/<%= @event.id %>" method="post">
 
 <!-- id serial4 primary key,
@@ -15,7 +17,6 @@ bronze VARCHAR(255)
   <label for="name">Event Name:</label>
   <input type="text" name="name" value="<%= @event.name %>"><P>
 
-
   <label for="gold">Gold:</label>
   <input type="text" name="gold" value="<%= @event.gold %>">
   <label for="silver">Silver:</label>
@@ -23,5 +24,6 @@ bronze VARCHAR(255)
   <label for="gold">Bronze:</label>
   <input type="text" name="bronze" value="<%= @event.bronze %>">
   <input type='submit' value="Save Event">
-  
+
 </form>
+<!-- </div> -->

@@ -11,8 +11,8 @@ CREATE TABLE events (
   id serial4 primary key,
   sport VARCHAR(255),
   name VARCHAR(255),
-  gold VARCHAR(255),
-  Silver VARCHAR(255),
+  gold VARCHAR(255),  - foreign key
+  silver VARCHAR(255),
   bronze VARCHAR(255)
 );
 

@@ -2,19 +2,19 @@
 <% ctr=1 %>
 
 <div style="background:url('images/copacabana.jpg'); background-size:100%; height:500px; color:black"; >
-<BR><BR><BR>
+<BR>
  <CENTER><TABLE BORDER='1'>
 
- <TD colspan="10"  BGCOLOR="#060E6D" style="font-size: 25px;"><CENTER><FONT color="green">Events</CENTER></TD><TR>
+ <TD colspan="10"  BGCOLOR="Yellow" style="font-size: 25px;"><CENTER><FONT color="black">Events</CENTER></TD><TR>
  <% @events.each do |event| %>
 
 
  <TD VALIGN='Top' WIDTH="200" class="Country" >
-   <CENTER><FONT color="Yellow"> <%= event.sport %>
+   <CENTER><FONT color="Yellow"> <a href = "/events/<%= event.id %>/edit"><%= event.sport %></a>
    <!-- <BR> -->
      <B>
     <!-- <CENTER><%= event.name %> -->
-    <TD WIDTH="10" BGCOLOR="Yellow"></TD>
+    <TD WIDTH="10" BGCOLOR="Green"></TD>
 
     <!-- <IMG SRC="flags/<%#= event.name %>.png" ></TD> -->
     

@@ -48,9 +48,14 @@ get '/nations' do
       end
 
       get '/events/:id/edit' do
+        # binding.pry
         @event = Events.find(params[:id])
+
         erb ( :event_edit )
       end
+
+
+
 
 
 # #INDEX from REST
