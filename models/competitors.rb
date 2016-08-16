@@ -3,7 +3,7 @@ require_relative('../db/sql_runner')
 
 class Competitors
 
-  attr_reader( :id, :name)
+  attr_reader( :id, :name, :competitor)
 
   def initialize( options )
     @id = options['id'].to_i
@@ -12,8 +12,8 @@ class Competitors
 
   def save()
     sql = "INSERT INTO competitors (id,name) VALUES ('#{ @name }', #{ @id }) RETURNING *"
-    album = SqlRunner.run( sql ).first
-    @id = nation['id']
+    competitior = SqlRunner.run( sql ).first
+    @id = competitior['id']
   end
 
   def competitors()

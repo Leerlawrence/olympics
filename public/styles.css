@@ -66,6 +66,11 @@ INPUT, SELECT {width:100%; height:200;}
 
 TD.Country {padding-left: 12px; padding-right: 2px;}
 
+TD.flag {
+margin: 0;
+padding: 0;
+}
+
 h4a {background-color:   white;}
 
 .newScrollBar {

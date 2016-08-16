@@ -42,10 +42,16 @@ get '/nations' do
        erb ( :medal_table )
       end
 
-     get '/events' do
-      @events=Events.all
-       erb ( :events )
+      get '/events' do
+        @events=Events.all
+        erb ( :events )
       end
+
+      get '/events/:id/edit' do
+        @event = Events.find(params[:id])
+        erb ( :event_edit )
+      end
+
 
 # #INDEX from REST
 # get '/artists' do

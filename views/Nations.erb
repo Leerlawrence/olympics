@@ -3,14 +3,14 @@
 <% ctr=1 %>
 <P><P><P>
  <CENTER><TABLE BORDER='1'>
- <TD colspan="10"  BGCOLOR="Yellow" style="font-size: 35px; color:black;"><CENTER>Nations</CENTER></TD><TR>
+ <TD colspan="10"  BGCOLOR="Yellow" style="font-size: 25px; color:black;"><CENTER>Nations</CENTER></TD><TR>
  <% @nations.each do |nation| %>
 
 
  <TD WIDTH="150" class="Country" BGCOLOR="Green">
     
     <%= nation.name %>
-    <TD WIDTH="10" BGCOLOR="#060E6D"><CENTER><IMG SRC="flags/<%= nation.name %>.png" </TD>
+    <TD WIDTH="10" class="flag" BGCOLOR="#060E6D" PADDING="0"><CENTER><IMG SRC="flags/<%= nation.name %>.png" </TD>
     
     <% if ctr==5 %>
       </TD><TR>
