@@ -12,6 +12,8 @@ Silver VARCHAR(255),
 bronze VARCHAR(255)
  -->
 <form>
+<TABLE BORDER="2" WIDTH="50">
+
   <label for="sport">Sport:</label>
   <input type="text" name="sport" value="<%= @event.sport %>"><P>
   <label for="name">Event Name:</label>
@@ -24,6 +26,6 @@ bronze VARCHAR(255)
   <label for="gold">Bronze:</label>
   <input type="text" name="bronze" value="<%= @event.bronze %>">
   <input type='submit' value="Save Event">
-
+  </TABLE>
 </form>
 <!-- </div> -->

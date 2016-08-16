@@ -6,14 +6,15 @@
 <% ctr=1 %>
 <P><P><P>
  <CENTER><TABLE BORDER='1';>
- <TD colspan="10"  BGCOLOR="Yellow" style="font-size: 25px;font-color:white;"><CENTER><font color="black">Competitors</CENTER></TD><TR>
+ <TD colspan="10"  BGCOLOR="Yellow" style="font-size: 25px;font-color:white; "><CENTER><font color="black">Competitors</CENTER></TD><TR>
  <% @competitors.each do |competitor, | %>
-
- <TD WIDTH="150" class="Country" >
-    <font color="white"><%= competitor.name %></TD>
+ <!-- <td style="background-image:url(../images/runani.gif);background-repeat:no-repeat;background-size:250px 180px;   width: 250px; height: 180px;"></td> -->
+ 
     <TD WIDTH="10" BGCOLOR="#060E6D">
    <IMG SRC="person/<%= competitor.name %>.jpg" WIDTH="50" HEIGHT="50" ></TD>
     
+    <TD WIDTH="150" class="Country" >
+       <font color="white"><%= competitor.name %></TD>
     <% if ctr==5 %>
       </TD><TR>
     <% ctr=1 %>
