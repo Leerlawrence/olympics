@@ -59,11 +59,11 @@ class Events
   end
 
 
-  # def self.all()
-  #   sql = "SELECT * FROM events ORDER BY name"
-  #   events = SqlRunner.run( sql )
-  #   result = events.map { |s| Events.new( s ) }
-  
-  #   return result
-  # end
+   def self.medal_table()
+     sql = "SELECT * FROM events ORDER BY gold"
+     events = SqlRunner.run( sql )
+     result = events.map { |s| Events.new( s ) }
+  # binding.pry
+     return result
+   end
 end

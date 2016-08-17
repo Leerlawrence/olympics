@@ -1,0 +1,43 @@
+<!-- 
+ <!-- <CENTER><IMG SRC= "Rio_square.jpg" WIDTH="30%" Height="30%"/></LEFT> -->
+
+ 
+ <CENTER><TABLE BORDER='1';>
+ <TD colspan="10"  BGCOLOR="Yellow" style="font-size: 25px;font-color:white; "><CENTER><font color="black">
+ <ol>
+ <% @competitors.each do |competitor, | %>
+ <li name=competitor.id>competitor.name</li>
+<% end %>
+<ol>
+ <% end %>
+ </TABLE> -->
+
+
+ <html>
+  <body>
+   <h3> Unordered List </h3>
+   <ul>
+    <li>An item</li>
+    <li>Another item</li>
+   </ul>
+   <h3> Ordered List </h3>
+   <ol>
+    <li>Item one</li>
+    <li>Item two</li>
+   </ol>
+   <h3> Definition List </h3>
+   <dl>
+    <dt>Term 1</dt>
+    <dd>Definition of term 1</dd>
+    <dt>Term 2</dt>
+    <dd>Definition of term 2</dd>
+   </dl>
+   <h3> Modified Ordered List </h3>
+   <ol type="A" start="6">
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li value="12">List item 3</li>
+    <li>List item 4</li>
+   </ol>
+  </body>
+ </html>

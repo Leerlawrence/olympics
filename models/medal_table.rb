@@ -28,7 +28,7 @@ class Events
     sql = "SELECT * FROM events ORDER BY sport"
     events = SqlRunner.run( sql )
     result = events.map { |s| Events.new( s ) }
-    binding.pry
+    # binding.pry
     return result
   end
 

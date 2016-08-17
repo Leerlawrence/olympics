@@ -1,20 +1,25 @@
 
 <% ctr=1 %>
 
-<div style="background:url('images/copacabana.jpg'); background-size:100%; height:500px; color:black"; >
+<div style="background:url('images/copacabana.jpg'); background-repeat: no-repeat; background-size: 100% 170%; border:0;   height:535px; color:black"; >
+ 
 <BR>
  <CENTER><TABLE WIDTH="80%" BORDER='1'>
 
- <TD colspan="10"  BGCOLOR="Yellow" style="font-size: 25px;"><CENTER><FONT color="black">Events</CENTER></TD><TR>
+
+ <TD colspan="10"  BGCOLOR="#000065" style="font-size: 25px; "><CENTER><font color="Yellow">Events</CENTER></TD><TR>
+
+ <!-- <TD colspan="2"></TD> <TD colspan="6"  BGCOLOR="#000065" style="font-size: 25px;font-color:white; "><CENTER><font color="Yellow">Events</CENTER></TD><TD colspan="2"></TD><TR> -->
+ <!-- <TD colspan="10"  BGCOLOR="Yellow" style="font-size: 25px;"><CENTER><FONT color="black">Events</CENTER></TD><TR> -->
  <% @events.each do |event| %>
 
 
- <TD VALIGN='Center' WIDTH=150 class="Country" >
+ <TD VALIGN='Center' WIDTH=150 class="eventdata"  >
    <CENTER><FONT color="Yellow"> <a href = "/events/<%= event.id %>/edit"><%= event.sport %></a>
    <!-- <BR> -->
      <B>
     <!-- <CENTER><%= event.name %> -->
-    <TD WIDTH="10" BGCOLOR="Green">
+    <TD WIDTH="10" BGCOLOR="#264d00">
       <IMG SRC="sports/<%= event.sport %>.gif" WIDTH="35" HEIGHT="35" ></TD>
 
     </TD>
@@ -30,6 +35,7 @@
 <% end %>
 
  <% end %>
+ <TD>.</TD><TD>.</TD>
  </TABLE>
 </div>
 

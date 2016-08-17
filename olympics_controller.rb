@@ -23,6 +23,10 @@ get '/splash' do
  erb ( :splash )
 end
 
+get '/select' do
+  @competitors=Competitors.all
+ erb ( :select )
+end
 
 get '/home' do
  erb ( :home )
@@ -39,8 +43,17 @@ end
 
 
 get '/medal_table' do
+  @events=Events.medal_table
  erb ( :medal_table )
 end
+
+get '/show_medals' do
+  @events=Events.medal_table
+ erb ( :medal_table )
+end
+
+
+
 
 get '/events' do
   @events=Events.all
@@ -57,11 +70,17 @@ end
 #   @event.update(params[:id]) 
 #   redirect(to ("/events"))
 # end
-
+# ADD NEW IN MORNING
 get '/nations/:id/edit' do
   @nations = Nations.find(params[:id])
   erb ( :nation_edit )
 end
+
+post '/events/new' do 
+  @event = Events.new( params ) 
+  redirect to ("/events")
+end
+
 
 post '/events/:id' do 
   @event = Events.update( params ) 

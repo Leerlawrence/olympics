@@ -4,17 +4,17 @@
  <div style="background:url('images/stadium.jpg'); background-size:100%; height:500px; color:black"; >
 
 <% ctr=1 %>
-<P><P><P>
+<BR>
  <CENTER><TABLE BORDER='1';>
- <TD colspan="10"  BGCOLOR="Yellow" style="font-size: 25px;font-color:white; "><CENTER><font color="black">Competitors</CENTER></TD><TR>
+ <TD colspan="10"  BGCOLOR="#000065" style="font-size: 25px;font-color:white; "><CENTER><font color="Yellow">Competitors</CENTER></TD><TR>
  <% @competitors.each do |competitor, | %>
  <!-- <td style="background-image:url(../images/runani.gif);background-repeat:no-repeat;background-size:250px 180px;   width: 250px; height: 180px;"></td> -->
  
-    <TD WIDTH="10" BGCOLOR="#060E6D">
+    <TD WIDTH="10" BGCOLOR="#060E6D" class="data" > 
    <IMG SRC="person/<%= competitor.name %>.jpg" WIDTH="50" HEIGHT="50" ></TD>
     
-    <TD WIDTH="150" class="Country" >
-       <font color="white"><%= competitor.name %></TD>
+    <TD WIDTH="150" class="data" ><u>
+       <font color="white"><%= competitor.name %></font>u></TD>
     <% if ctr==5 %>
       </TD><TR>
     <% ctr=1 %>
@@ -24,6 +24,7 @@
 <% end %>
 
  <% end %>
+ 
  </TABLE>
 
 

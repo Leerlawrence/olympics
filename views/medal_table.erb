@@ -1,47 +1,77 @@
 <HTML>
 <TITLE>Rio Olympics 2016 - Medal Table></TITLE>
 
-<HEAD></HEAD>
 <BODY >
 <!-- <div class="hit-the-floor">Rio Olympics 2016</div> -->
-
-
+<TABLE WIDTH="100%"><TD class="data">
 <div style="background:url('images/brazilBg.jpg'); background-size:100%; height:500px; color:black"; >
   <div class="medal" background-size:100%; height:490px; style='overflow:auto;'>
+
   <TABLE width ="80%" BORDER='1'; BORDER-STYLE= "Ridged">
+  <TH colspan="6"  BGCOLOR="#000065" style="font-size: 25px;font-color:white; "><CENTER><font color="Yellow">Medal Table</CENTER></TH><TR>
 
-  <TD Colspan="6"><CENTER><h1>Medal Table</h1></CENTER></TD><TR>
+  <!-- <TD Colspan="6"><CENTER><h1>Medal Table</h1></CENTER></TD><TR> -->
   
-  <TH width="10%">Pos.</TH><TH WIDTH="5">flag</TH><TH>Country</TH><TH width="20%">Gold</><TH width="20%">Silver</TH><TH width="20%">Bronze</TH><TR>
+  <TH width="10%" bgcolor="yellow">Pos.</TH><TH bgcolor="yellow" WIDTH="5">Flag</TH><TH bgcolor="yellow">Country</TH><TH width="20%" bgcolor="yellow"> Gold</><TH width="20%" bgcolor="yellow">Silver</TH><TH width="20%" bgcolor="yellow">Bronze</TH><TR>
   
-  <TD><CENTER>1</TD><TD><CENTER><IMG SRC="/flags/GREAT BRITAIN.png"/ >
-  <TD>Great Britain<TD><B><CENTER>10<TD><B><CENTER>7<TD><B><CENTER>3</TD><TR>
+  <TD class="data"><CENTER>1</TD><TD class="data"><CENTER><IMG SRC="/flags/GREAT BRITAIN.png"/ >
+  <TD class="data">Great Britain<TD class="data"><B><CENTER>10<TD class="data"><B><CENTER>7<TD class="data"><B><CENTER>3</TD><TR>
   
-  <TD><CENTER>2</TD><TD><IMG SRC="/flags/South_Africa.png" width ="100%"">
-  <TD>South Africa<TD><B><CENTER>10<TD><B><CENTER>7<TD><B><CENTER>3</TD><TR>
+  <TD class="data"><CENTER>2</TD><TD class="data"><IMG SRC="/flags/South_Africa.png" width ="100%"">
+  <TD class="data">South Africa<TD class="data"><B><CENTER>10<TD class="data"><B><CENTER>7<TD class="data"><B><CENTER>3</TD><TR>
   
-  <TD><CENTER>3</TD><TD><IMG SRC="/flags/australia.png">
-  <TD>Australia<TD><B><CENTER>8<TD><B><CENTER>7<TD><B><CENTER>3</TD><TR>
+  <TD class="data"><CENTER>3</TD><TD class="data"><IMG SRC="/flags/australia.png">
+  <TD class="data">Australia<TD class="data"><B><CENTER>8<TD class="data"><B><CENTER>7<TD class="data"><B><CENTER>3</TD><TR>
 
-  <TD><CENTER>4</TD><TD><IMG SRC="/flags/great britain.png">
-  <TD>Great Britain<TD><B><CENTER>8<TD><B><CENTER>5<TD><B><CENTER>3</TD><TR>
+  <TD class="data"><CENTER>4</TD><TD class="data"><IMG SRC="/flags/great britain.png">
+  <TD class="data">Great Britain<TD class="data"><B><CENTER>8<TD class="data"><B><CENTER>5<TD class="data"><B><CENTER>3</TD><TR>
 
-  <TD><CENTER>5</TD><TD><IMG SRC="/flags/united states of america (usa).png">
-  <TD>USA<TD><B><CENTER>10<TD><B><CENTER>7<TD><B><CENTER>3</TD><TR>
+  <TD class="data"><CENTER>5</TD><TD class="data"><IMG SRC="/flags/united states of america (usa).png">
+  <TD class="data">USA<TD class="data"><B><CENTER>10<TD class="data"><B><CENTER>7<TD class="data"><B><CENTER>3</TD><TR>
 
-  <TD><CENTER>6</TD><TD><IMG SRC="/flags/new zealand.png">
-  <TD>New Zealand<TD><B><CENTER>8<TD><B><CENTER>7<TD><B><CENTER>3</TD><TR>
+  <TD class="data"><CENTER>6</TD><TD class="data"><IMG SRC="/flags/new zealand.png">
+  <TD class="data">New Zealand<TD class="data"><B><CENTER>8<TD class="data"><B><CENTER>7<TD class="data"><B><CENTER>3</TD><TR>
 
-  <TD><CENTER>7</TD><TD><IMG SRC="/flags/china.png">
-  <TD>China<TD><B><CENTER>8<TD><B><CENTER>5<TD><B><CENTER>3</TD><TR>
+  <TD class="data"><CENTER>7</TD><TD class="data"><IMG SRC="/flags/china.png">
+  <TD class="data">China<TD class="data"><B><CENTER>8<TD class="data"><B><CENTER>5<TD class="data"><B><CENTER>3</TD><TR>
 
-  <TD><CENTER>8</TD><TD><IMG SRC="/flags/france.png">
-  <TD>France<TD><B><CENTER>10<TD><B><CENTER>7<TD><B><CENTER>3</TD><TR>
+  <TD class="data"><CENTER>8</TD><TD class="data"><IMG SRC="/flags/france.png">
+  <TD class="data">France<TD class="data"><B><CENTER>10<TD class="data"><B><CENTER>7<TD class="data"><B><CENTER>3</TD><TR>
 
-  <TD><CENTER>9</TD><TD><IMG SRC="/flags/Afghanistan.png">
-  <TD>Afghanistan<TD><B><CENTER>6<TD><B><CENTER>7<TD><B><CENTER>3</Table>
+  <TD class="data"><CENTER>9</TD><TD class="data"><IMG SRC="/flags/Afghanistan.png">
+  <TD class="data">Afghanistan<TD class="data"><B><CENTER>6<TD class="data"><B><CENTER>7<TD class="data"><B><CENTER>3</Table>
   </TD>
 </div>
+</TD></TABLE>
 
-</BODY>
-</HTML>
+<P><P><P><P><P><P><P><P>
+<% ctr=1 %>
+<CENTER><TABLE BORDER="1">
+<% @events.each do |event| %>
+
+
+ <TD VALIGN='Center' WIDTH=150 class="data"  >
+   <CENTER><FONT color="Yellow"> <a href = "/events/<%= event.id %>/edit"><%= event.sport %></a>
+   <!-- <BR> -->
+     <B>
+    <!-- <CENTER><%= event.name %> -->
+    <TD WIDTH="10" BGCOLOR="#264d00">
+      <IMG SRC="sports/<%= event.sport %>.gif" WIDTH="35" HEIGHT="35" ><!-- </TD> -->
+
+    <% if ctr==5 %>
+      </TD><TR>
+      <% ctr=1 %>
+    <% else %>
+      <% ctr +=1 %>
+      </TD>
+    <% end %>
+
+    <!-- <IMG SRC="flags/<%#= event.name %>.png" ></TD> -->
+    
+  
+
+ <% end %>
+ </TABLE>
+</DIV>
+ </BODY>
+ </HTML>
