@@ -53,8 +53,6 @@ get '/show_medals' do
 end
 
 
-
-
 get '/events' do
   @events=Events.all
   erb ( :events )
@@ -77,7 +75,8 @@ get '/nations/:id/edit' do
 end
 
 post '/events/new' do 
-  @event = Events.new( params ) 
+    @event = Events.edit() #new( params ) 
+   erb ( :event_edit )
   redirect to ("/events")
 end
 
