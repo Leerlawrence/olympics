@@ -1,6 +1,6 @@
 require( 'pg' )
 require_relative('../db/sql_runner')
-
+require_relative('../models/competitors')
 
 class Events
 
@@ -17,9 +17,21 @@ class Events
   end
 # FINISH THIS OFF TOMORROEW
   def save()
-    sql = "INSERT INTO events (id,name,sport,gold,silver,bronze) VALUES ('#{ @name }', #{ @id }) RETURNING *"
-    album = SqlRunner.run( sql ).first
-    @id = nation['id']
+    sql = "INSERT INTO events ( name, sport, gold, silver, bronze) VALUES ('#{ @name }', '#{ @sport }', '#{@gold}', '#{silver}', '#{bronze}') RETURNING *"
+    event = SqlRunner.run( sql ).first
+    @id = event['id']
+  end
+
+  def self.update(options)
+    sql = "UPDATE events SET  
+    name = '#{options['name']}',
+    sport = '#{options['sport']}',
+    gold = '#{options['gold']}',
+    silver = '#{options['silver']}',
+    bronze = '#{options['bronze']}'
+    WHERE id = #{options['id']}"
+# binding.pry
+    SqlRunner.run( sql )
   end
 
   def self.all()

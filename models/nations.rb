@@ -32,12 +32,18 @@ class Nations
 
   def self.find(id)
     sql = "SELECT * FROM nations WHERE id = #{id}"
-  binding.pry
+  # binding.pry
     nations = SqlRunner.run( sql )
     result = Nations.new(nations.first)
     return result
   end
 
-
+    def self.update(options)
+      sql = "UPDATE events SET  
+      name = '#{options['name']}' 
+      WHERE id = #{options['id']}"
+  # binding.pry
+      SqlRunner.run( sql )
+    end
 
 end

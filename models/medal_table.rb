@@ -1,6 +1,6 @@
 require( 'pg' )
 require_relative('../db/sql_runner')
-
+require ('pry-byebug')
 
 class Events
 
@@ -28,6 +28,7 @@ class Events
     sql = "SELECT * FROM events ORDER BY sport"
     events = SqlRunner.run( sql )
     result = events.map { |s| Events.new( s ) }
+    binding.pry
     return result
   end
 
